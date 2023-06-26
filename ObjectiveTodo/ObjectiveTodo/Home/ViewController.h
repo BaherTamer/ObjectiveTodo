@@ -5,9 +5,10 @@
 //  Created by Baher Tamer on 26/06/2023.
 //
 
+#import "AppendTask.h"
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UITableViewController <AppendTask>
 
 
 @end

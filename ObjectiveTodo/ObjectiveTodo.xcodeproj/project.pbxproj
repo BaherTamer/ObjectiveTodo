@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E31769D2A49BD51005A820D /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E31769C2A49BD51005A820D /* AddTaskViewController.m */; };
 		6EC446492A49A28200E97B7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC446482A49A28200E97B7F /* AppDelegate.m */; };
 		6EC4464C2A49A28200E97B7F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC4464B2A49A28200E97B7F /* SceneDelegate.m */; };
 		6EC4464F2A49A28200E97B7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC4464E2A49A28200E97B7F /* ViewController.m */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E31769B2A49BD51005A820D /* AddTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
+		6E31769C2A49BD51005A820D /* AddTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
+		6E31769E2A49CAE0005A820D /* AppendTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppendTask.h; sourceTree = "<group>"; };
 		6EC446442A49A28200E97B7F /* ObjectiveTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EC446472A49A28200E97B7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6EC446482A49A28200E97B7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +46,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E3176952A49A432005A820D /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				6EC446472A49A28200E97B7F /* AppDelegate.h */,
+				6EC446482A49A28200E97B7F /* AppDelegate.m */,
+				6EC4464A2A49A28200E97B7F /* SceneDelegate.h */,
+				6EC4464B2A49A28200E97B7F /* SceneDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		6E3176962A49A440005A820D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6EC4464D2A49A28200E97B7F /* ViewController.h */,
+				6EC4464E2A49A28200E97B7F /* ViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6E31769A2A49BD38005A820D /* Add Task */ = {
+			isa = PBXGroup;
+			children = (
+				6E31769B2A49BD51005A820D /* AddTaskViewController.h */,
+				6E31769C2A49BD51005A820D /* AddTaskViewController.m */,
+			);
+			path = "Add Task";
+			sourceTree = "<group>";
+		};
 		6EC4463B2A49A28200E97B7F = {
 			isa = PBXGroup;
 			children = (
@@ -61,17 +94,15 @@
 		6EC446462A49A28200E97B7F /* ObjectiveTodo */ = {
 			isa = PBXGroup;
 			children = (
-				6EC446472A49A28200E97B7F /* AppDelegate.h */,
-				6EC446482A49A28200E97B7F /* AppDelegate.m */,
-				6EC4464A2A49A28200E97B7F /* SceneDelegate.h */,
-				6EC4464B2A49A28200E97B7F /* SceneDelegate.m */,
-				6EC4464D2A49A28200E97B7F /* ViewController.h */,
-				6EC4464E2A49A28200E97B7F /* ViewController.m */,
+				6E3176952A49A432005A820D /* Delegates */,
+				6E3176962A49A440005A820D /* Home */,
+				6E31769A2A49BD38005A820D /* Add Task */,
 				6EC446502A49A28200E97B7F /* Main.storyboard */,
 				6EC446532A49A28400E97B7F /* Assets.xcassets */,
 				6EC446552A49A28400E97B7F /* LaunchScreen.storyboard */,
 				6EC446582A49A28400E97B7F /* Info.plist */,
 				6EC446592A49A28400E97B7F /* main.m */,
+				6E31769E2A49CAE0005A820D /* AppendTask.h */,
 			);
 			path = ObjectiveTodo;
 			sourceTree = "<group>";
@@ -146,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E31769D2A49BD51005A820D /* AddTaskViewController.m in Sources */,
 				6EC4464F2A49A28200E97B7F /* ViewController.m in Sources */,
 				6EC446492A49A28200E97B7F /* AppDelegate.m in Sources */,
 				6EC4465A2A49A28400E97B7F /* main.m in Sources */,
