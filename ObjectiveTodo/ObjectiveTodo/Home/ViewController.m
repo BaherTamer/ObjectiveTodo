@@ -139,6 +139,8 @@
     
     if ([task[@"isCompleted"] boolValue]) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
     }
     
     return cell;
@@ -154,6 +156,7 @@
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     cell.accessoryType = ([task[@"isCompleted"] boolValue]) ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self saveData];
 }
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
